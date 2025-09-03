@@ -1,4 +1,4 @@
-# pdf2xml — step‑by‑step PDF → XML scaffold
+# pdf2xml
 
 > Parse academic PDFs into a pragmatic JATS‑like XML.  
 > This repo is being built **incrementally** with tests at each step.
