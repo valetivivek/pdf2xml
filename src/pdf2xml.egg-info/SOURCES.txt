@@ -10,8 +10,9 @@ src/pdf2xml.egg-info/entry_points.txt
 src/pdf2xml.egg-info/requires.txt
 src/pdf2xml.egg-info/top_level.txt
 src/pdf2xml/pdf_reader/base.py
-src/pdf2xml/pdf_reader/dummy_reader.py
+src/pdf2xml/pdf_reader/pymupdf_reader.py
 src/pdf2xml/utils/log.py
+src/pdf2xml/utils/text.py
 src/pdf2xml/xml/build.py
 src/pdf2xml/xml/validate.py
 tests/test_step1_smoke.py

@@ -1,4 +1,4 @@
-reader: pymupdf     # set to "dummy" if you don't have PyMuPDF installed yet
+reader: pymupdf   
 enable_ocr: false
 table_extractor: camelot
 page_ranges: "all"

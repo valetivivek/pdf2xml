@@ -1,4 +1,5 @@
-from __future__ import annotations
+﻿from __future__ import annotations
+import re
 from .config import Config
 from .utils.log import get_logger
 from .xml.build import build_minimal_article
@@ -32,15 +33,27 @@ def _make_reader(name: str):
     logger.info("Using DummyReader")
     return DummyReader()
 
+def _split_authors(authors_str: str) -> list[str]:
+    """Split 'A B, C D and E F' into ['A B','C D','E F']."""
+    if not authors_str:
+        return []
+    parts = re.split(r"\s*,\s*|\s+and\s+", authors_str)
+    return [p.strip() for p in parts if p.strip()]
+
 def convert_pdf(path: str, cfg: Config):
     logger = get_logger()
     logger.info("Starting conversion")
     reader = _make_reader(cfg.reader)
     meta = reader.extract_meta(path)
+
+    authors_list = _split_authors(meta.authors)
+
     meta_dict = {
         "title": meta.title if meta.title else "Untitled",
+        # kept for backward-compat fallback
         "author_surname": (meta.authors.split(",")[0].split()[-1] if meta.authors else "Doe"),
         "author_given": (meta.authors.split(",")[0].split()[0] if meta.authors else "Jane"),
+        "authors_list": authors_list,   # NEW: full list for contrib-group
         "summary": meta.abstract or "This is a placeholder body; later steps will emit full sections.",
     }
     tree = build_minimal_article(meta_dict)

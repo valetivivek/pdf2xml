@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<article>
+  <front>
+    <article-meta>
+      <title-group>
+        <article-title>GAN-BASED SYNTHETIC BRAIN MR IMAGE GENERATION</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib>
+          <name>
+            <surname>Han</surname>
+            <given-names>Changhee</given-names>
+          </name>
+        </contrib>
+        <contrib>
+          <name>
+            <surname>Hayashi</surname>
+            <given-names>Hideaki</given-names>
+          </name>
+        </contrib>
+        <contrib>
+          <name>
+            <surname>Rundo</surname>
+            <given-names>Leonardo</given-names>
+          </name>
+        </contrib>
+        <contrib>
+          <name>
+            <surname>Araki</surname>
+            <given-names>Ryosuke</given-names>
+          </name>
+        </contrib>
+        <contrib>
+          <name>
+            <surname>Furukawa</surname>
+            <given-names>Yujiro</given-names>
+          </name>
+        </contrib>
+        <contrib>
+          <name>
+            <surname>Mauri</surname>
+            <given-names>Giancarlo</given-names>
+          </name>
+        </contrib>
+        <contrib>
+          <name>
+            <surname>Nakayama</surname>
+            <given-names>Hideki</given-names>
+          </name>
+        </contrib>
+      </contrib-group>
+    </article-meta>
+  </front>
+  <body>
+    <p>In medical imaging, it remains a challenging and valuable goal how to generate realistic medical images completely different from the original ones; the obtained synthetic images would improve diagnostic reliability, allowing for data augmentation in computer-assisted diagnosis as well as physician training. In this paper, we focus on generating synthetic multi-sequence brain Magnetic Resonance (MR) images using Generative Adversarial Networks (GANs). This involves difficulties mainly due to low contrast MR images, strong consistency in brain anatomy, and intra-sequence variability. Our novel realistic medical image generation approach shows that GANs can generate 128×128 brain MR images avoiding artifacts. In our preliminary validation, even an expert physician was unable to accurately distinguish the synthetic images from the real samples in the Visual Turing Test.</p>
+  </body>
+  <back>
+    <ref-list/>
+  </back>
+</article>
