@@ -1,4 +1,4 @@
-# pdf2xml — step‑by‑step PDF → XML scaffold
+# pdf2xml
 
 > Parse academic PDFs into a pragmatic JATS‑like XML.  
 > This repo is being built **incrementally** with tests at each step.
@@ -14,22 +14,17 @@ We also added a small text normalizer to fix common PDF artifacts (hyphenations 
 ## Quick start (Windows / PowerShell)
 
 ```powershell
-# 0) Open a terminal in the repo folder
 Set-Location C:\Users\YOURNAME\Desktop\pdf2xml
 
-# 1) Create & activate a virtual environment
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
 
-# 2) Install the package in editable mode + test tools
 python -m pip install -U pip
 pip install -e .
 pip install pytest
 
-# 3) (Recommended) enable real text extraction
 pip install PyMuPDF
 
-# 4) Sanity check the CLI
 pdf2xml --help
 ```
 
@@ -69,7 +64,7 @@ pdf2xml validate .\out.xml
 To test with a real paper:
 ```powershell
 # Put your paper in tests\data\
-Copy-Item "C:\path\to\GAN-based_synthetic_brain_MR_image_generation.pdf" .\tests\data\
+Copy-Item "C:\path\to\sample.pdf" .\tests\data\
 
 # Convert using the PyMuPDF reader
 pdf2xml convert .\tests\data\GAN-based_synthetic_brain_MR_image_generation.pdf -o .\gan.xml -c .\examples\minimal_config.yaml
