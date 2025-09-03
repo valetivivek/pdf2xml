@@ -1,0 +1,15 @@
+
+[dev]
+pytest
+pytest-cov
+black
+ruff
+mypy
+
+[ocr]
+pytesseract
+
+[tables]
+camelot-py
+pdfplumber
+tabula-py

@@ -1,0 +1,2 @@
+[console_scripts]
+pdf2xml = pdf2xml.cli:main

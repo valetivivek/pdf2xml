@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<article>
+  <front>
+    <article-meta>
+      <title-group>
+        <article-title>sample1</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib>
+          <name>
+            <surname>Doe</surname>
+            <given-names>Jane</given-names>
+          </name>
+        </contrib>
+      </contrib-group>
+    </article-meta>
+  </front>
+  <body>
+    <p>This is a placeholder body; later steps will emit full sections.</p>
+  </body>
+  <back>
+    <ref-list/>
+  </back>
+</article>

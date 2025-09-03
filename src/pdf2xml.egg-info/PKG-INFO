@@ -1,0 +1,19 @@
+Metadata-Version: 2.4
+Name: pdf2xml
+Version: 0.0.1
+Summary: Convert academic PDFs into pragmatic JATS-like XML
+Author-email: Vishnu Vivek <vivekvaleti7053@gmail.com>
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Provides-Extra: ocr
+Requires-Dist: pytesseract; extra == "ocr"
+Provides-Extra: tables
+Requires-Dist: camelot-py; extra == "tables"
+Requires-Dist: pdfplumber; extra == "tables"
+Requires-Dist: tabula-py; extra == "tables"
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: pytest-cov; extra == "dev"
+Requires-Dist: black; extra == "dev"
+Requires-Dist: ruff; extra == "dev"
+Requires-Dist: mypy; extra == "dev"
